@@ -1,6 +1,6 @@
-﻿using McpTodo.Data;
+﻿using McpTodoServer.Data;
 
-namespace McpTodo.Contracts;
+namespace McpTodoServer.Contracts;
 
 public class TodoItemDto
 {

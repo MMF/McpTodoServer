@@ -1,11 +1,10 @@
-﻿using McpTodo.Contracts;
-using McpTodo.Data;
+﻿using McpTodoServer.Contracts;
+using McpTodoServer.Data;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
 using System.ComponentModel;
-using System.Threading.Tasks;
 
-namespace McpTodo.Tools;
+namespace McpTodoServer.Tools;
 
 internal class TodoTools(TodoDbContext db)
 {

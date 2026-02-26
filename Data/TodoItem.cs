@@ -1,4 +1,4 @@
-﻿namespace McpTodo.Data;
+﻿namespace McpTodoServer.Data;
 
 public class TodoItem
 {

@@ -1,5 +1,5 @@
-using McpTodo.Data;
-using McpTodo.Tools;
+using McpTodoServer.Data;
+using McpTodoServer.Tools;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,4 +1,4 @@
-﻿namespace McpTodo.Contracts;
+﻿namespace McpTodoServer.Contracts;
 
 public class McpToolResult<T>
 {
