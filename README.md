@@ -13,23 +13,26 @@ dotnet run
 - type:  MCP: Add Server
 - Choose:  HTTP or Server-Sent Envent
 - Enter the app URL
-- Now you are ready!, Open VS Code Chat Window (agent mode) as Chat with it.
-  ```
-  Add task Play Football
-  ```
-    ```
-  Add task Study Homework!
-  ```
-    ```
-  List my tasks
-  ```
-    ```
-  Mark task study homework as complete
-  ```
-  ```
-  Add two tasks pray in time and memorize quran
-  ```
-    ```
-  Add task Drive to home and mark it as complete
-  ```
+- Now you are ready!
+
+# Using the tool
+Open VS Code Chat Window (agent mode) as Chat with it.
+```
+Add task Play Football
+```
+```
+Add task Study Homework!
+```
+```
+List my tasks
+```
+```
+Mark task study homework as complete
+```
+```
+Add two tasks pray in time and memorize quran
+```
+```
+Add task Drive to home and mark it as complete
+```
   
