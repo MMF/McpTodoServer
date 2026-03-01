@@ -1,4 +1,5 @@
 using McpTodoServer.Data;
+using McpTodoServer.Middleware;
 using McpTodoServer.Tools;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +15,18 @@ builder.Services
     .WithTools<TodoTools>();
 
 var app = builder.Build();
-app.MapMcp();
+
+app.MapGet("/", () => "OK");
+app.MapGet("/health", () => "Healthy");
+
+app.UseWhen(
+    ctx => ctx.Request.Path.StartsWithSegments("/api/mcp"), 
+    appBuilder =>
+    {
+        appBuilder.UseMiddleware<McpAuthenticationMiddleware>();
+    });
+
+app.MapMcp("/api/mcp");
 //app.UseHttpsRedirection();
 
 app.Run();
